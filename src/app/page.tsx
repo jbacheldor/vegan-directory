@@ -1,11 +1,12 @@
-import SearchBox from "./components/SearchBox";
+import RecipeCard from "./components/Cards/RecipeCard";
 
 const Home: React.FC = () => {
 
   return (
     <>
-    <div>
-      recipe of the day (oooh ahh)
+    <div id='recipeOfDay'>
+      <span id='title'>Recipe of the Day!</span>
+      <RecipeCard/>
     </div>
     </>
   );
