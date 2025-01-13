@@ -1,0 +1,16 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#header #title {
+    font-weight: 800;
+}
+
+.links:hover {
+    color: green;
+    cursor: pointer;
+}
