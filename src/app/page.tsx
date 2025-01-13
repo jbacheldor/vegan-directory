@@ -5,9 +5,8 @@ const Home: React.FC = () => {
   return (
     <>
     <div>
+      recipe of the day (oooh ahh)
     </div>
-      <SearchBox/>
-    hey
     </>
   );
 }

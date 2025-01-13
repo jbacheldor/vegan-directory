@@ -6,20 +6,24 @@ const SearchBox: React.FC = () => {
 
     return (
     <>
-    <div id="searchBox">
-        <input id='searchInput'></input>
-        <button id='searchButton'>Search</button>
-    </div>
-    <div id='filters'>
-        Filters
-        {filters.map((i, index)=> {
-            return (
-                <div key={index} className='filterBoxes'>
-                {i}
-                </div>
-            )
-        })}
-
+    <div id='searchContainer'>
+        <span className='searchTitles'>Search</span>
+        <hr className='divider'/>
+        <div id="searchBox">
+            <input id='searchInput'></input>
+            <button id='searchButton'>Search</button>
+        </div>
+        <span className='searchTitles'>Filters</span>
+        <hr className='divider'/>
+        <div id='filters'>
+            {filters.map((i, index)=> {
+                return (
+                    <div key={index} className='filterBoxes'>
+                    {i}
+                    </div>
+                )
+            })}
+        </div>
     </div>
     </>
     );

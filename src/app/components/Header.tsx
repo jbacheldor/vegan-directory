@@ -11,7 +11,6 @@ const Header: React.FC = () => {
             <Link className='links' href="/search">Search Recipe</Link>
             <Link className='links' href="/recommendations">Recommned Creator</Link>
         </div>
-        click me !
         </>
     );
 }
