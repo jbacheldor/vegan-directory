@@ -18,12 +18,6 @@
     color: #b3c0a6;
 }
 
-.searchTitles {
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-}
-
 #searchButton {
     margin: 0px 10px;
     background: #46662b;
@@ -73,10 +67,4 @@
 .filterBoxes:hover {
     cursor: pointer;
     font-weight: 600;
-}
-
-.divider {
-    margin: 5px 20px;
-    border: 1px solid #a0ad93;
-    border-radius: 10px;
 }

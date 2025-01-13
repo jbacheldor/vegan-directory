@@ -1,10 +1,10 @@
-
+import RecommendationsForm from "../components/RecommendationForm/RecForm";
 
 const Recommendations: React.FC = () => {
 
     return (
         <>
-        recommend someone here!
+            <RecommendationsForm/>
         </>
     );
 }

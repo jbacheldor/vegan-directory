@@ -1,0 +1,9 @@
+#DesignSections {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonSection {
+    display: flex;
+    justify-content: center;
+}

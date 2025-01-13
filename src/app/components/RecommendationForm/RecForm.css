@@ -1,0 +1,49 @@
+div > #recommendationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px 0;
+    align-items: center;
+    background: #f1f3e9;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #a9b496;
+}
+
+#formTitle {
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+input {
+    outline: none;
+    padding: 2px 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 2px solid #95bf47;
+}
+
+.divider {
+    margin: 5px 20px;
+    border: 1px solid #a0ad93;
+    border-radius: 10px;
+}
+
+button {
+    background: #c3eea1;
+    border-radius: 10px;
+    border: 2px solid #6f9753;
+    width: 90px;
+    height: 35px;
+    margin: 10px 0;
+}

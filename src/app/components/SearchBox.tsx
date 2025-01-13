@@ -1,14 +1,18 @@
+import Header from './HeaderSection/Header';
 import './Search.css'
 
-const SearchBox: React.FC = () => {
+type props = {
+    type: string;
+}
 
-    const filters = ['speciality', 'gender']
+const SearchBox: React.FC<props> = ({type}) => {
+
+    const filters = type == 'creator' ? ['speciality', 'gender'] : ['cuisine', 'region']
 
     return (
     <>
+    <Header name={'Search'}/>
     <div id='searchContainer'>
-        <span className='searchTitles'>Search</span>
-        <hr className='divider'/>
         <div id="searchBox">
             <input id='searchInput'></input>
             <button id='searchButton'>Search</button>

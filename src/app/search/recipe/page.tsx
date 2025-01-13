@@ -6,7 +6,7 @@ const Search: React.FC = () => {
 
     return (
     <>
-    <SearchBox/>
+    <SearchBox type='recipe'/>
     <Table/>
     </>
     );
