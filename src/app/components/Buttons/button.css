@@ -1,0 +1,31 @@
+button {
+    border-radius: 10px;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+button.ENABLED {
+    background: #dde6ca;
+    color: #818b74;
+}
+
+button.DISABLED {
+    background: #f0f2e7;
+    color: #a7ae97;
+    border: 2px solid #dedfd6;
+}
+
+button.PRIMARY {
+    background: #c3eea1;
+    border: 2px solid #6f9753;
+}
+
+button.SECONDARY {
+    background: #46662b;
+    color: #f1f3e9;
+}
+
+
+/* inspired by: https://www.untitledui.com/blog/what-is-a-design-system */
+/* f1f3e9 */

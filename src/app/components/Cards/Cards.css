@@ -1,0 +1,23 @@
+#recipeCard {
+    background: #f1f3e9;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #a9b496;
+    width: 400px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+#recipeOfDay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

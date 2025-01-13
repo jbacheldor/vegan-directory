@@ -1,0 +1,13 @@
+.divider {
+    margin: 5px 20px;
+    border: 1px solid #a0ad93;
+    border-radius: 10px;
+}
+
+.title {
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
