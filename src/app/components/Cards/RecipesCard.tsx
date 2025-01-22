@@ -1,6 +1,6 @@
 import './Cards.css'
 
-export type props = {
+export type RecipeProps = {
     title: string;
     servings: number;
     url: string;
@@ -10,7 +10,7 @@ export type props = {
     allergies?: string[]
 }
 
-const ResultsCard: React.FC<{props: props}> = ({props}) => {
+const RecipeCard: React.FC<{props: RecipeProps}> = ({props}) => {
     const {title, servings, url, author, description, cookTime, allergies} = props
     
     return(
@@ -40,4 +40,4 @@ const ResultsCard: React.FC<{props: props}> = ({props}) => {
     )
 }
 
-export default ResultsCard;
+export default RecipeCard;

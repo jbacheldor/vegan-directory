@@ -7,7 +7,7 @@ const Search: React.FC = () => {
     return (
     <>
     <SearchBox type='recipe'/>
-    <Table/>
+    <Table type='recipe'/>
     </>
     );
 }

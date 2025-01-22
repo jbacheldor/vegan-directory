@@ -1,9 +1,14 @@
-import ResultsCard, { props } from '../Cards/ResultsCard';
+import CreatorCard, { CreatorProps } from '../Cards/CreatorCard';
+import RecipeCard, { RecipeProps } from '../Cards/RecipesCard';
 import './Table.css'
 
-const Table: React.FC = () => {
+type props = {
+    type: string;
+}
 
-    const results: props[] = [{
+const Table: React.FC<props> = ({type}) => {
+
+    const recipeResults: RecipeProps[] = [{
         title: "soup",
         servings: 145,
         url: "soup.com",
@@ -22,20 +27,52 @@ const Table: React.FC = () => {
         author: "us",
         description: "corn bread from nc"
     }]
-    
+
+    const creatorResults: CreatorProps[] = [{
+        name: 'jess',
+        website: 'jess.com',
+        handle: 'veganjess',
+        instagram: 'woofwoof.com',
+        tiktok: 'anotherlinkisuppose.com',
+        fullyVegan: true,
+        speciality: "swag"
+    }, 
+{
+    name: 'jess',
+    website: 'jess.com',
+    handle: 'veganjess',
+    instagram: 'woofwoof.com',
+    tiktok: 'anotherlinkisuppose.com',
+    fullyVegan: true,
+    speciality: "swag"
+}, {
+    name: 'jess',
+    website: 'jess.com',
+    handle: 'veganjess',
+    instagram: 'woofwoof.com',
+    tiktok: 'anotherlinkisuppose.com',
+    fullyVegan: true,
+    speciality: "swag"
+}]
 
     return (
         <div>
             <div id="resultsContainer">
                 Results
-                {results.map((i, index)=> {
+                {type == 'recipe' && recipeResults.map((i, index)=> {
                     return (
                         <div key={index}>
-                            <ResultsCard props={i}/>
+                            <RecipeCard props={i}/>
                         </div>
                     )
                 })}
-
+                {type == 'creator' && creatorResults.map((i, index)=> {
+                    return (
+                        <div key={index}>
+                            <CreatorCard props={i}/>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     );
