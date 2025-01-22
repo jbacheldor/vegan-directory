@@ -3,6 +3,14 @@ button {
     margin: 10px 5px;
     padding: 5px 10px;
     font-weight: 600;
+    box-shadow: 2px 2px 2px #46662b
+}
+
+button:hover {
+    position: relative;
+    left: 2px;
+    top: 2px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
 }
 
 button.ENABLED {
@@ -13,7 +21,7 @@ button.ENABLED {
 button.DISABLED {
     background: #f0f2e7;
     color: #a7ae97;
-    border: 2px solid #dedfd6;
+    border: 2px solid #f1f3e9;
 }
 
 button.PRIMARY {
@@ -23,7 +31,8 @@ button.PRIMARY {
 
 button.SECONDARY {
     background: #46662b;
-    color: #f1f3e9;
+    color: #f1f3e9; 
+    box-shadow: 2px 2px 2px #213014
 }
 
 
