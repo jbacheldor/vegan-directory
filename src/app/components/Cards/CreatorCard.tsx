@@ -22,17 +22,18 @@ const CreatorCard:React.FC<{props: CreatorProps}> = ({props}) => {
     const {name, website, handle, instagram, tiktok, fullyVegan, speciality} = props
 
     return (
-        <div>
+        <div className='card'>
             <div id="topSection">
-                <span>{name}</span>
+                <span id='recipeTitle'>{name}</span>
                 <span>
                 {handle}
                 </span>
             </div>
+            <hr/>
             <div id="detailsSection">
-                <span>{fullyVegan}</span>
-                <span>{speciality}</span>
+z                <span>{speciality}</span>
             </div>
+            <hr/>
             <div id="socialsSection">
                 <span>{website}</span>
                 <span>{instagram}</span>
