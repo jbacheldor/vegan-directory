@@ -21,3 +21,45 @@
     justify-content: center;
     align-items: center;
 }
+
+#recipeTitle{
+    font-weight: 700;
+}
+
+.card {
+    background: #f1f3e9;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #a9b496;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    max-width: 80%;
+}
+
+#recipeInfo {
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#cardDescription {
+    padding: 10px;
+}
+
+#recipeTopSection {
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#recipeInfo a {
+    font-weight:bold;
+    color: #46662b;
+}
+
+#recipeInfo a:hover {
+    text-decoration: underline;
+    color: #a9b496;
+}
