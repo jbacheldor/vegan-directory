@@ -31,7 +31,7 @@ const Table: React.FC = () => {
                 {results.map((i, index)=> {
                     return (
                         <div key={index}>
-                            <ResultsCard description={i.description} title={i.title} servings={i.servings} url={i.url} author={i.author}/>
+                            <ResultsCard props={i}/>
                         </div>
                     )
                 })}

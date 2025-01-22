@@ -10,7 +10,7 @@ export type props = {
     allergies?: string[]
 }
 
-const ResultsCard: React.FC<props> = (props) => {
+const ResultsCard: React.FC<{props: props}> = ({props}) => {
     const {title, servings, url, author, description, cookTime, allergies} = props
     
     return(
