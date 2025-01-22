@@ -1,3 +1,4 @@
+"use client"
 import Button, { buttonTypes } from "../components/Buttons/Button";
 import Header from "../components/HeaderSection/Header";
 import './designs.css'
