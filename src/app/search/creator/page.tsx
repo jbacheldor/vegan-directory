@@ -13,8 +13,6 @@ export default async function searchCreator() {
         <Table type='creator' data={creators ? creators : []}/>
     </>
   )
-
-  return <pre>{JSON.stringify(creators, null, 2)}</pre>
 }
 
 // const searchCreator: React.FC = () => {

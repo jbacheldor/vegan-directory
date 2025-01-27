@@ -10,7 +10,7 @@ export type RecipeProps = {
 }
 
 export type CreatorProps = {
-    creatorid: number,
+    creatorid?: number,
     creatorname?: string,
     website?: string, 
     handle: string,

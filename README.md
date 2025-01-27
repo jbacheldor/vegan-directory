@@ -39,3 +39,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 Notes from a wee little lad:
 
 - need to run npm install @supabase/ssr @supabase/supabase-js in order to create a client - (from: https://supabase.com/docs/guides/auth/server-side/creating-a-client)
+
+
+to-do:
+- page navigation & changing how many options show up per page
+- double checking on safety of hitting database through this page - need to obscure this endpoint i doth think
+- double check w/ eric that i organizing the structure of this situation well 
+- filters !!! need to implement those
+- need to implement add call to add new stuff to data base
+- regex for the search (womp womp womppppp)
+- would be cool to build a script to clear db and reset it
+- create use hook for supabase
+- definitely error handling
+- filter drop downs - need 2 create them
