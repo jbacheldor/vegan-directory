@@ -21,7 +21,8 @@ export const recipeResults: RecipeProps[] = [{
 }]
 
 export const creatorResults: CreatorProps[] = [{
-    name: 'jess',
+    creatorid: 1234,
+    creatorname: 'jess',
     website: 'jess.com',
     handle: 'veganjess',
     instagram: 'woofwoof.com',
@@ -30,7 +31,8 @@ export const creatorResults: CreatorProps[] = [{
     speciality: "swag"
 }, 
 {
-name: 'jess',
+    creatorid: 34567222,
+creatorname: 'jess',
 website: 'jess.com',
 handle: 'veganjess',
 instagram: 'woofwoof.com',
@@ -38,7 +40,8 @@ tiktok: 'anotherlinkisuppose.com',
 fullyVegan: true,
 speciality: "swag"
 }, {
-name: 'jess',
+    creatorid: 456789,
+    creatorname: 'jess',
 website: 'jess.com',
 handle: 'veganjess',
 instagram: 'woofwoof.com',

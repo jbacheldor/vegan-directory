@@ -2,12 +2,12 @@ import { CreatorProps } from '@/app/types/searchResults'
 import './Cards.css'
 
 const CreatorCard:React.FC<{props: CreatorProps}> = ({props}) => {
-    const {name, website, handle, instagram, tiktok, fullyVegan, speciality} = props
+    const {creatorname, website, handle, instagram, tiktok, fullyVegan, speciality} = props
 
     return (
         <div className='card'>
             <div id="topSection">
-                <span id='recipeTitle'>{name}</span>
+                <span id='recipeTitle'>{creatorname}</span>
                 <span>
                 {handle}
                 </span>

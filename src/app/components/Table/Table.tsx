@@ -10,7 +10,12 @@ type props = {
 
 const Table: React.FC<props> = ({type, data}) => {
 
-    console.log(data)
+
+    const localData = type == 'recipe' ? recipeResults : creatorResults
+    const results = data ? data : localData
+
+
+    console.log(results)
 
     return (
         <div>
@@ -23,7 +28,7 @@ const Table: React.FC<props> = ({type, data}) => {
                         </div>
                     )
                 })}
-                {type == 'creator' && creatorResults.map((i, index)=> {
+                {type == 'creator' && results.map((i, index)=> {
                     return (
                         <div key={index}>
                             <CreatorCard props={i}/>
