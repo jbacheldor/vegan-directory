@@ -2,7 +2,6 @@ import { CreatorProps } from "@/app/types/searchResults";
 import { createClient } from "@/app/utils/apiServer";
 
 export default async function addRecommendationQuery(data: CreatorProps) {
-
     const supabase = await createClient();
     const { error } = await supabase
     .from("creators")

@@ -13,7 +13,7 @@ export type CreatorProps = {
     creatorid?: number,
     creatorname?: string,
     website?: string, 
-    handle: string,
+    handle?: string,
     // could alternatively do socials here
     instagram?: string,
     tiktok?: string,
