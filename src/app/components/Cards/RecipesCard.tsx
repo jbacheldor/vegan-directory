@@ -1,14 +1,5 @@
+import { RecipeProps } from '@/app/types/searchResults';
 import './Cards.css'
-
-export type RecipeProps = {
-    title: string;
-    servings: number;
-    url: string;
-    author: string;
-    description: string;
-    cookTime?: number;
-    allergies?: string[]
-}
 
 const RecipeCard: React.FC<{props: RecipeProps}> = ({props}) => {
     const {title, servings, url, author, description, cookTime, allergies} = props
