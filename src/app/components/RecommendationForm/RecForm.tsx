@@ -3,18 +3,25 @@ import { CreatorProps } from '@/app/types/searchResults';
 import { useState } from 'react';
 import Header from '../HeaderSection/Header';
 import './RecForm.css';
-const RecommendationsForm: React.FC = () => {
-    const [formState, updateForm] = useState<CreatorProps>({    
+
+const initialProps: CreatorProps = {
         creatorname: '',
         speciality: '',
-        fullyVegan: false
-    })  
+        handle: '',
+        website: '',
+        instagram: '',
+        tiktok: ''
+}
+
+const RecommendationsForm: React.FC = () => {
+    const [formState, updateForm] = useState<CreatorProps>(initialProps)  
 
     const addCreator = () => {
         fetch('/insertrecommendation', {
             method: "POST",
             body: JSON.stringify(formState)
         })  
+        updateForm(initialProps)
     }
 
     const onUpdate = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -28,7 +35,7 @@ const RecommendationsForm: React.FC = () => {
     return (
         <div id='recommendationForm'>     
         <Header name="Recommend a Creator"/>  
-            <form id='form'>
+            {/* <form id='form' onSubmit={addCreator}> */}
                 <label>Name
                 <input name='creatorname' type='text' value={formState.creatorname} onChange={onUpdate}></input>
                 </label>
@@ -57,8 +64,8 @@ const RecommendationsForm: React.FC = () => {
                 <input type='text' name='speciality' value={formState.speciality}  onChange={onUpdate}></input>
                 </label>
 
-                <button onClick={addCreator}>Submit</button>
-            </form>
+                <button type='submit' onClick={addCreator} >Submit</button>
+            {/* </form> */}
         </div>
     );
 }
