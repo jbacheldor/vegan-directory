@@ -1,4 +1,3 @@
-import type {  NextApiResponse } from 'next'
 import { createClient } from '../utils/apiServer';
 import {NextResponse} from 'next/server'
 
@@ -6,7 +5,7 @@ import {NextResponse} from 'next/server'
 export const revalidate = 60
  
 // export async function POST(req: NextApiRequest, res: NextApiResponse<Response>) {
-export async function POST(request: Request, res: NextApiResponse<Response>) {
+export async function POST(request: Request) {
   try {
     const supabase = await createClient();
     const req = await request.json()

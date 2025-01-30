@@ -10,7 +10,6 @@ type props = {
 
 const Table: React.FC<props> = ({type, data}) => {
 
-
     const localData = type == 'recipe' ? recipeResults : creatorResults
     const results = data ? data : localData
 
