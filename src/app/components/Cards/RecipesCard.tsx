@@ -2,7 +2,7 @@ import { RecipeProps } from '@/app/types/searchResults';
 import './Cards.css'
 
 const RecipeCard: React.FC<{props: RecipeProps}> = ({props}) => {
-    const {title, servings, url, author, description, cookTime, allergies} = props
+    const {title, servings, url, author, description} = props
     
     return(
         <>

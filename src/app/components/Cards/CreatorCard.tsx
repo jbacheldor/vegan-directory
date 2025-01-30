@@ -2,7 +2,7 @@ import { CreatorProps } from '@/app/types/searchResults'
 import './Cards.css'
 
 const CreatorCard:React.FC<{props: CreatorProps}> = ({props}) => {
-    const {creatorname, website, handle, instagram, tiktok, fullyVegan, speciality} = props
+    const {creatorname, website, handle, instagram, tiktok, speciality} = props
 
     return (
         <div className='card'>
