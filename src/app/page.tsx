@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       <RecipeCard/>
       <hr/>
       <span>Soup should be tasted, not looked at - Stephen Downward</span>
-      <span>100% of people that don't eat die, but also a 100% of people that eat die too so - Stephen Downward</span>
+      <span>100% of people that dont eat die, but also a 100% of people that eat die too so - Stephen Downward</span>
     </div>
     </>
   );
